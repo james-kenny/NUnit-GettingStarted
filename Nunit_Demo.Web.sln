@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nunit_Demo.Web", "Nunit_Demo.Web\Nunit_Demo.Web.csproj", "{0ED8BAB7-1E62-4F4E-890C-4BB99F8429F1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nunit_Demo.Tests", "Nunit_Demo.Tests\Nunit_Demo.Tests.csproj", "{C560F865-D3C2-4906-89ED-EB2F95174E41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nunit_Demo.Data", "Nunit_Demo.Data\Nunit_Demo.Data.csproj", "{0583500C-BC6F-4C0A-9F2B-05268334B494}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{0ED8BAB7-1E62-4F4E-890C-4BB99F8429F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0ED8BAB7-1E62-4F4E-890C-4BB99F8429F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0ED8BAB7-1E62-4F4E-890C-4BB99F8429F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C560F865-D3C2-4906-89ED-EB2F95174E41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C560F865-D3C2-4906-89ED-EB2F95174E41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C560F865-D3C2-4906-89ED-EB2F95174E41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C560F865-D3C2-4906-89ED-EB2F95174E41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0583500C-BC6F-4C0A-9F2B-05268334B494}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0583500C-BC6F-4C0A-9F2B-05268334B494}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0583500C-BC6F-4C0A-9F2B-05268334B494}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0583500C-BC6F-4C0A-9F2B-05268334B494}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

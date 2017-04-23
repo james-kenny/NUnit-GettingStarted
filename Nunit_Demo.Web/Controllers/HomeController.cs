@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Nunit_Demo.Data;
+using Nunit_Demo.Web.Models;
 
 namespace Nunit_Demo.Web.Controllers
 {
@@ -10,7 +12,13 @@ namespace Nunit_Demo.Web.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            AppViewModel _wrapper = new AppViewModel();
+
+            ProviderQueries PQ = new ProviderQueries();
+
+            _wrapper.providers = PQ.GetProviders();
+
+            return View(_wrapper);
         }
 
         public ActionResult About()

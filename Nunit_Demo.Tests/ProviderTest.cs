@@ -11,6 +11,14 @@ namespace Nunit_Demo.Tests
     [TestFixture]
     class ProviderTest
     {
+
+        [Test]
+        public void FirstTest()
+        {
+
+            Assert.IsTrue(true,"Hello Test World!");
+        }
+
         [Test]
         public void LoadProviders()
         {

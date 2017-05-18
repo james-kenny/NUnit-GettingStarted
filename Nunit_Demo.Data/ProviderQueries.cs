@@ -16,7 +16,7 @@ namespace Nunit_Demo.Data
 
             _records.Add(AddProvider(1, "Azure", "Windows Azure", "All Ok", "Running Fine"));
             _records.Add(AddProvider(2, "AWS", "Amazon Web Services", "All Ok", "Running Fine"));
-        
+
 
             return _records;
         }

@@ -16,21 +16,24 @@ namespace Nunit_Demo.Tests
         {
             List<Provider> _providers = new List<Provider>();
 
+            Boolean bResult = true;
+            string sStatusMessage = "";
             ProviderQueries PQ = new ProviderQueries();
 
             _providers = PQ.GetProviders();
 
             if (_providers.Count != 0)
             {
-                Boolean bResult = true;
-
-                Assert.IsTrue(bResult, "Providers loaded");
+                bResult = true;
+                sStatusMessage = "Yes has providers";
             }
             else
             {
-                Assert.IsFalse(false, "No Providers loaded");
+                bResult = false;
+                sStatusMessage = "No Providers";
             }
 
+            Assert.IsTrue(bResult, sStatusMessage);
         }
 
         [Test]

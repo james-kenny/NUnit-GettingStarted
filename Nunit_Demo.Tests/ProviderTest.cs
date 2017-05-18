@@ -16,7 +16,7 @@ namespace Nunit_Demo.Tests
         public void FirstTest()
         {
 
-            Assert.IsTrue(true,"Hello Test World!");
+            Assert.IsTrue(true, "Hello Test World!");
         }
 
         [Test]

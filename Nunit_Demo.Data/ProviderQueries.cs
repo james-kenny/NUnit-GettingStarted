@@ -29,8 +29,6 @@ namespace Nunit_Demo.Data
             
 
             throw  new Exception("database missing");
-
-            return _records;
         }
 
         public Provider AddProvider(int Id, string ProviderCode, string ProviderName, string Title, string Status)

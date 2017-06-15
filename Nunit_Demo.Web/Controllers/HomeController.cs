@@ -21,18 +21,47 @@ namespace Nunit_Demo.Web.Controllers
             return View(_wrapper);
         }
 
-        public ActionResult About()
+
+        //Save User method to demonstrate Unit testing of parameters
+        public ActionResult SaveUser(string firstname, string lastname, string email, int number)
         {
-            ViewBag.Message = "Your application description page.";
+            UserQueries UQ = new UserQueries();
 
-            return View();
-        }
+            int iUserId = 0;
+            Boolean bValid = true;
 
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            // Validate User Input
+            // Do we have a first name
+            bValid = (firstname == "" ? false : true);
 
-            return View();
+            if (bValid)
+            {
+                // Do we have a last name
+                bValid = (lastname == "" ? false : true);
+            }
+
+            if (bValid)
+            {
+                // Do we have an email
+                bValid = (email == "" ? false : true);
+            }
+
+            
+            // If Valid Save User
+            if (bValid)
+            {
+                iUserId = UQ.InsertUser(firstname, lastname, email, number);
+            }
+
+
+            if (!bValid)
+            {
+                return Redirect("/saveuser?message=MissingInformation");
+            }
+            else
+            {
+                return Redirect("/UserAdded?id=" + iUserId);
+            }
         }
     }
 }
